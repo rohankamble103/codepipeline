@@ -29,7 +29,7 @@ fi
 
 # Start a new container
 echo "Starting a new container..."
-docker run -itd -p $PORT:90 --name $CONTAINER_NAME $IMAGE_NAME
+docker run -itd -p $PORT:80 --name $CONTAINER_NAME $IMAGE_NAME
 
 # Verify if the container started
 if [ $? -eq 0 ]; then
